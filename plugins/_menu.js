@@ -12,9 +12,9 @@ cmd({
 },
 async (conn, mek, m, { from, pushname, reply }) => {
     try {
-        let botName = config.BOT_NAME ? config.BOT_NAME.split(';')[1] || 'X-BOT-MD' : 'X-BOT-MD';
+        let botName = config.BOT_NAME ? config.BOT_NAME.split(';')[1] || 'ZERO-BOT' : 'ZERO-BOT';
 
-        let menuText = `┌───〔 ${botName} 〕───┐
+        let menuText = `┌───〔 ${ZERO-BOT} 〕───┐
 │ User: ${pushname}
 │ Mode: ${config.MODE}
 │ Uptime: ${runtime(process.uptime())}
@@ -45,7 +45,7 @@ async (conn, mek, m, { from, pushname, reply }) => {
         await conn.sendMessage(
             from,
             {
-                image: { url: `https://i.postimg.cc/rFV2pJW5/IMG-20250603-WA0017.jpg` },
+                image: { url: `https://inevitable-harlequin-qt67hp7eta-2o4pjk3br8.edgeone.dev/IMG-20251202-WA0112.jpg` },
                 caption: menuText},
                 
             { quoted: mek }
